@@ -32,7 +32,7 @@ const Features = () => {
 
   return (
     <section
-      className=" flex gap-11 items-center  bg-[#fff6f6] flex-col  pt-20 md:px-24 max-md:pt-14 pb-20  lg:h-screen max-md:px-10 "
+      className=" flex gap-11 items-center  bg-[#fff6f6] flex-col  pt-20 md:px-24 max-md:pt-14 pb-20  max-md:px-10 "
       id="benefits"
     >
       <h3 className="font-dela text-3xl " ref={ref}>

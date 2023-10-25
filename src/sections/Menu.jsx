@@ -1,6 +1,6 @@
 import {
   curve,
-  tacos,
+  taco,
   elote,
   water,
   burritos,
@@ -10,12 +10,12 @@ import {
 import { motion } from "framer-motion";
 import { useState } from "react";
 const menu = {
-  tacos: { title: "Pastor", img: tacos, color: "bg-lessGreen" },
+  tacos: { title: "Tacos", img: taco, color: "bg-lessGreen" },
   elote: { title: "Elote", img: elote, color: "bg-orange" },
   nachos: { title: "Nachos", img: nachos, color: "bg-lessGreen" },
   tamales: { title: "Tamales", img: tamales, color: "bg-lessGreen" },
   horchata: { title: "Horchata", img: water, color: "bg-pink" },
-  burritos: { title: "Burrito", img: burritos, color: "bg-lessGreen" },
+  burritos: { title: "Burritos", img: burritos, color: "bg-lessGreen" },
 };
 let animated = false;
 
@@ -51,17 +51,18 @@ const Menu = () => {
               onMouseLeave={handleMouseLeave}
             >
               <motion.h5
-                className="text-6xl mb-6 text-center text-green m-0"
+                className="text-5xl mb-6 text-center text-green m-0 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]"
                 initial={{ x: 0 }}
                 animate={
-                  isHovered && index === ind ? { x: ["-100%", "100%"] } : ""
+                  isHovered && index === ind
+                    ? { x: ["-100%", "100%", "0%"] }
+                    : ""
                 }
                 transition={
                   isHovered
                     ? {
-                        repeat: Infinity,
                         duration: 1,
-                        ease: "linear",
+                        ease: "easeInOut",
                         stagger: 0,
                       }
                     : ""
@@ -70,17 +71,18 @@ const Menu = () => {
                 {el.title}
               </motion.h5>
               <motion.h5
-                className="text-5xl mb-6 text-center text-green m-0"
+                className="text-4xl mb-6 text-center text-green m-0 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]"
                 initial={{ x: 0 }}
                 animate={
-                  isHovered && index === ind ? { x: ["-100%", "100%"] } : ""
+                  isHovered && index === ind
+                    ? { x: ["-100%", "100%", "0%"] }
+                    : ""
                 }
                 transition={
                   isHovered
                     ? {
-                        repeat: Infinity,
                         duration: 1,
-                        ease: "linear",
+                        ease: "easeInOut",
                         stagger: 0,
                       }
                     : ""
@@ -91,17 +93,18 @@ const Menu = () => {
               <motion.img
                 src={el.img}
                 alt={el.title}
-                className="w-[90%] h-60 relative bottom-[-3rem] text-"
+                className="w-[90%] h-60 relative bottom-[-3rem] "
                 initial={{ x: 0 }}
                 animate={
-                  isHovered && index === ind ? { x: ["-100%", "100%"] } : ""
+                  isHovered && index === ind
+                    ? { x: ["-100%", "100%", "0%"] }
+                    : ""
                 }
                 transition={
                   isHovered
                     ? {
-                        repeat: Infinity,
                         duration: 1,
-                        ease: "linear",
+                        ease: "easeInOut",
                         stagger: 0,
                       }
                     : ""
