@@ -5,7 +5,7 @@ const MainContent = () => {
   return (
     <section className="bg-green w-full  text-center text-white font-dela flex items-center flex-col ">
       <motion.h2
-        className="relative text-9xl max-sm:text-7xl max-lg:mt-28"
+        className="relative text-9xl max-sm:text-8xl max-lg:mt-50"
         initial={{ opacity: 0, y: -40 }}
         animate={{ scale: [0.5, 1.3, 1], opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -29,7 +29,7 @@ const MainContent = () => {
         className="w-[600px] h-[400px] relative z-10  bottom-8 max-sm:w-[400px] max-sm:h-[300px] object-contain max-sm:pl-9"
       />
       <motion.h2
-        className="text-9xl relative z-20 bottom-28 max-sm:text-7xl"
+        className="text-9xl relative z-20 bottom-28 max-sm:text-8xl"
         initial={{ opacity: 0, y: 40 }}
         animate={{ scale: [0.5, 1.3, 1], opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
